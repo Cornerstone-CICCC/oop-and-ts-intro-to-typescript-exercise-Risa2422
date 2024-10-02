@@ -3,6 +3,13 @@
 //    The function should return the largest number in the array.
 //    Ensure the parameter and return type are typed.
 function findMax(numbers) {
+    let largestNum = 0;
+    numbers.map((num) => {
+        if (num > largestNum) {
+            largestNum = num;
+        }
+    });
+    return largestNum;
 }
 // Expected output:
 console.log(findMax([1, 5, 3, 9, 2])); // 9
