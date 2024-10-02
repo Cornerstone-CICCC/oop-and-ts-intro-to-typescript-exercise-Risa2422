@@ -3,10 +3,10 @@
 //    Formula: Fahrenheit = (Celsius * 9/5) + 32
 //    Ensure the parameter and return type are typed correctly.
 
-function celsiusToFahrenheit(celsius) {
-
+function celsiusToFahrenheit(celsius: number): number {
+  return (celsius * 9) / 5 + 32;
 }
 
 // Expected output:
-console.log(celsiusToFahrenheit(0));  // 32
+console.log(celsiusToFahrenheit(0)); // 32
 console.log(celsiusToFahrenheit(25)); // 77
